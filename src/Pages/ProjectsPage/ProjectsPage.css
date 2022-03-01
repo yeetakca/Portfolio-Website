@@ -1,0 +1,7 @@
+.projects-page-main-container {
+    width: calc(100vw - 2rem);
+    height: calc(100vh - 2rem);
+    background-color: var(--bg-color);
+    color: var(--primary-color);
+    padding: 1rem;
+}

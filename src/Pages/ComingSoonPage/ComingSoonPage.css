@@ -1,0 +1,31 @@
+.coming-soon-page-main-container {
+    width: calc(100vw - 3rem);
+    height: calc(100vh - 3rem);
+    background-color: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+.coming-soon-page-info-container {
+    color: var(--primary-color);
+    border: 4px dashed var(--primary-color);
+    padding: 1rem;
+    border-radius: 1rem;
+    animation: info-container-animation 2000ms ease-in-out;
+    text-align: center;
+}
+
+@keyframes info-container-animation {
+    0% {
+        transform: perspective(500px) translateX(-100vw) translateZ(50px);
+    }
+    75% {
+        transform: perspective(500px) translateX(0) translateZ(50px);
+    }
+    100% {
+        transform: perspective(500px) translateX(0) translateZ(0);
+    }
+}
